@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attendance Page</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body {
+			background-image: url('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg');
+			background-size: cover;
+			background-position: center;
+			color: white;
+			font-family: Arial, sans-serif;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+		}
+
+		table {
+			margin: auto;
+			border-collapse: collapse;
+			background-color: rgba(255, 255, 255, 0.19);
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+			border-radius: 5px;
+		}
+
+		th, td {
+			padding: 10px;
+			text-align: center;
+			border-bottom: 1px solid white;
+		}
+
+		th {
+			background-color: rgba(0, 0, 0, 0.653);
+			color: white;
+			font-weight: normal;
+			font-size: 20px;
+		}
+
+		td {
+			font-size: 18px;
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #3E8E41;
+		}
+
+		.container {
+			text-align: center;
+			margin-top: 50px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Attendance Page</h1>
+
+	<div class="container">
+		<form>
+			<label for="name">Search by Name:</label>
+			<input type="text" id="name" name="name">
+			<input type="submit" value="Search">
+		</form>
+	</div>
+
+	<br>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Student Name</th>
+				<th>Class</th>
+				<th>Attendance Status</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>John Doe</td>
+				<td>Class 1</td>
+				<td>Present</td>
+			</tr>
+			<tr>
+				<td>Jane Smith</td>
+				<td>Class 2</td>
+				<td>Absent</td>
+			</tr>
+			<tr>
+				<td>Mike Johnson</td>
+				<td>Class 3</td>
+				<td>Present</td>
+			</tr>
+			<tr>
+				<td>Sara Williams</td>
+				<td>Class 4</td>
+				<td>Present</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="back-btn">
+		<a href="index.html">Back to Home</a>
+	</div>
+</body>
+</html>

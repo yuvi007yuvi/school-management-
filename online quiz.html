@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Quiz</title>
+	<style>
+		/* Gradient background */
+		body {
+			
+			background: rgba(220, 20, 60, 0.741);
+		}
+		
+		/* Quiz form styling */
+		form {
+			background-color: #fff;
+			border-radius: 10px;
+			padding: 20px;
+			max-width: 800px;
+			margin: 0 auto;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+		}
+
+		h1 {
+			text-align: center;
+			color: #fff;
+			margin-top: 50px;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-size: 18px;
+			font-weight: bold;
+			color: #444;
+		}
+
+		input[type="submit"] {
+			background-color: #3a47d5;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			margin-top: 20px;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #1a20a6;
+		}
+
+		/* Back button styling */
+		.back-btn {
+			display: block;
+			margin: 50px auto 0;
+			text-align: center;
+		}
+
+		.back-btn a {
+			background-color: #fff;
+			color: #3a47d5;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			text-decoration: none;
+			font-size: 16px;
+			font-weight: bold;
+			cursor: pointer;
+			box-shadow: 0 0 5px rgba(0,0,0,0.3);
+		}
+
+		.back-btn a:hover {
+			background-color: #f2f2f2;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Online Quiz</h1>
+	<form>
+		<label for="topic">Choose a Topic:</label>
+		<select id="topic" name="topic">
+			<option value="">-- Select a Topic --</option>
+			<option value="math">Mathematics</option>
+			<option value="history">History</option>
+			<option value="science">Science</option>
+		</select>
+		<input type="submit" value="Start Quiz">
+	</form>
+	<div class="back-btn">
+		<a href="index.html">Back to Home</a>
+	</div>
+</body>
+</html>
